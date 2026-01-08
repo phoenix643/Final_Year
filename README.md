@@ -1,86 +1,62 @@
-**Federated Learning–Based Intrusion Detection System for IoT and Edge Networks**
+**Federated Learning-Based Intrusion Detection System for IoT and Edge Networks**
 
-📌 **Project Overview**
+**Project Overview**
 
 The rapid growth of Internet of Things (IoT) devices and edge computing technologies has transformed modern digital ecosystems, enabling smart devices and industrial sensors to operate more efficiently and intelligently. However, this increased connectivity also introduces significant cybersecurity threats, creating a strong demand for secure, scalable, and privacy-preserving intrusion detection solutions.
 
-Traditional Intrusion Detection Systems (IDS) rely heavily on centralized data collection and processing. While effective in some environments, these systems face major challenges in edge networks, including:
+Traditional Intrusion Detection Systems (IDS) rely on centralized data collection and processing. While effective in certain environments, such systems face major limitations in edge computing scenarios, including limited scalability, high communication overhead, and privacy risks due to centralized data sharing.
 
-Limited scalability
+This project proposes a decentralized intrusion detection framework using Federated Learning (FL) combined with an Attention-Augmented Convolutional Neural Network (CNN) to address these challenges.
 
-High communication overhead
+**Objectives**
 
-Privacy risks due to centralized data sharing
+* Design a privacy-preserving intrusion detection system for IoT and edge computing environments
 
-This project proposes a decentralized intrusion detection framework using Federated Learning (FL) combined with an Attention-Augmented Convolutional Neural Network (CNN) to address these limitations.
+* Enable local model training on edge devices without sharing raw data
 
-🎯** Objectives**
+* Improve intrusion detection accuracy through attention mechanisms
 
-Develop a privacy-preserving IDS suitable for IoT and edge computing environments
+* Enhance scalability, adaptability, and resilience of the detection system
 
-Eliminate centralized data sharing by enabling local model training on edge devices
+**Proposed Solution**
+**Federated Learning for Intrusion Detection**
 
-Improve intrusion detection accuracy using attention mechanisms
+Federated Learning enables multiple edge devices to collaboratively train a global intrusion detection model without exchanging raw local data. Each edge device trains a local model using its own data and periodically sends model updates to a central aggregation server. The aggregated global model is then redistributed to participating devices.
 
-Enhance system scalability, resilience, and adaptability
+This decentralized approach significantly reduces privacy risks and minimizes communication overhead, making it well suited for edge-based intrusion detection systems.
 
-🧠** Proposed Solution**
-Federated Learning for Intrusion Detection
+**Attention-Augmented CNN Model**
 
-Federated Learning enables multiple edge devices to collaboratively train a global intrusion detection model without sharing raw local data. Each device:
+To improve detection performance, particularly for complex and subtle cyber-attacks, the framework integrates an Attention-Augmented CNN for local model training. This architecture combines convolutional layers with attention mechanisms to emphasize the most relevant features in network traffic data.
 
-Trains a local model using its own data
+By dynamically focusing on critical patterns, the attention mechanism enhances feature representation and improves anomaly detection accuracy.
 
-Sends only model updates to a central aggregation server
+**Key Features**
 
-Receives an updated global model after periodic aggregation
+* Decentralized and privacy-preserving learning framework
 
-This approach significantly reduces privacy risks and lowers network communication costs, making it ideal for edge-based IDS deployment.
+* Real-time intrusion detection capability
 
-Attention-Augmented CNN Model
+* Enhanced feature extraction using attention mechanisms
 
-To improve detection performance, especially for complex or subtle cyber-attacks, the framework integrates an Attention-Augmented CNN for local training. This model:
+* Scalable deployment across distributed IoT and edge devices
 
-Combines convolutional layers with attention mechanisms
+* Reduced dependency on centralized data processing
 
-Dynamically emphasizes critical features in network traffic data
+**Benefits**
 
-Enhances feature representation and anomaly detection accuracy
+* Improved cybersecurity for IoT and edge computing networks
 
-By focusing on the most informative patterns in the dataset, the attention mechanism improves both precision and robustness of intrusion detection.
+* Strong protection against data leakage and privacy violations
 
-🔐 **Key Features**
+* Adaptability to evolving attack patterns
 
- Decentralized and privacy-preserving learning
+* Suitability for real-world, resource-constrained environments
 
- Real-time intrusion detection
+**References
+**
+This project builds upon existing research demonstrating the effectiveness of federated learning and deep learning-based intrusion detection systems in edge networks, including references [3], [4], and [13] as cited in the original research work.
 
- Attention-based feature enhancement
+**Academic Context**
 
- Scalable across distributed IoT and edge devices
-
- Reduced dependency on centralized data processing
-
-🚀 **Benefits**
-
-Improved cybersecurity for IoT and edge networks
-
-Strong resistance to data leakage and privacy violations
-
-High adaptability to evolving attack patterns
-
-Suitable for real-world, resource-constrained environments
-
-📚 **References**
-
-This project builds upon prior research demonstrating the effectiveness of federated learning and deep learning–based IDS solutions for edge networks, including:
-
-Federated learning for cybersecurity enhancement in edge environments
-
-Attention-based deep learning models for intrusion detection
-
-(References [3], [4], and [13] as cited in the original research)
-
-👨‍🎓 **Academic Context**
-
-This repository contains the Final Year Project submitted in partial fulfillment of the requirements for the undergraduate degree. The work focuses on addressing modern cybersecurity challenges using advanced machine learning techniques in distributed systems.
+This repository contains the Final Year Project submitted in partial fulfillment of the requirements for an undergraduate degree. The work focuses on addressing contemporary cybersecurity challenges using advanced machine learning techniques in distributed IoT and edge computing environments.
